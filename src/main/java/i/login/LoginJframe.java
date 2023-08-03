@@ -1,19 +1,21 @@
 
 package i.login;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
 public class LoginJframe extends javax.swing.JFrame {
+    
+    
 
   private static final String FILE_NAME = "userdata.txt"; 
   
     public LoginJframe() {
         initComponents();
     }
-
- 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -171,6 +173,7 @@ public class LoginJframe extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_salirActionPerformed
@@ -226,15 +229,35 @@ public class LoginJframe extends javax.swing.JFrame {
 }
 
 // Método para verificar las credenciales válidas
-private boolean isValidCredentials(String username, String password) {
-    // Aquí puedes implementar la lógica para verificar las credenciales válidas.
-    // Por ejemplo, puedes compararlas con valores constantes o leerlas desde un archivo o base de datos.
-    // Por ahora, usaré credenciales estáticas como ejemplo:
-    String validUsername = "usuario";
-    String validPassword = "contraseña";
+ private boolean isValidCredentials(String username, String password) {
+    try {
+        FileReader fileReader = new FileReader(FILE_NAME);
+        BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-    return username.equals(validUsername) && password.equals(validPassword);
+        String line;
+        while ((line = bufferedReader.readLine()) != null) {
+            String[] data = line.split(",");
 
+            if (data.length == 4) {
+                String storedUsername = data[0];
+                String storedPassword = data[3]; // Aquí usamos el último campo como contraseña
+
+                if (storedUsername.equals(username) && storedPassword.equals(password)) {
+                    bufferedReader.close();
+                    return true; // Credenciales válidas
+                }
+            }
+        }
+
+        bufferedReader.close();
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+
+
+
+        return false; // Credenciales inválidas
+    
     }//GEN-LAST:event_iniciarActionPerformed
 
     private void crearcuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearcuentaActionPerformed
