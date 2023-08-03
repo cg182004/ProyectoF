@@ -3,4 +3,9 @@ Dalvison,Reyes,Dalvinson@gmail.com,204182
 Dalvison,Reyes,Dalvinson@gmail.com,204182
 Kleiry
 Kleiry,Gomez,Kleiryg2005@gmail.com,203923
+<<<<<<< HEAD
 Davidson,King,DalvinsonReyes.p@gmail.com,123456789
+=======
+cg,gomez,holaa,1234
+carlos,gomez,carlosg2004@gmai;.com,1234
+>>>>>>> d9b140592fa9c2e84f1bad18eb33c9b9843d6120
