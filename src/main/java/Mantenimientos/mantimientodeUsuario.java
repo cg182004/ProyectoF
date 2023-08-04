@@ -3,6 +3,7 @@ package Mantenimientos;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.ButtonGroup;
@@ -22,6 +23,7 @@ public class mantimientodeUsuario extends javax.swing.JFrame {
        b.add(b1);
        b.add(b2);
        b.add(dummyButton);
+        this.setVisible(true);
        
     login.addActionListener(new java.awt.event.ActionListener() {
         public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -391,32 +393,34 @@ public class mantimientodeUsuario extends javax.swing.JFrame {
 
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
 String loginText = login.getText();
-        String password = new String(contraseña.getPassword());
+    String password = new String(contraseña.getPassword());
 
-        if (!loginText.isEmpty() && !password.isEmpty()) {
-            try {
-                // Verificar si el usuario ya existe en el archivo
-                if (isUserExists(loginText)) {
-                    isNewUser = false; // No es un nuevo usuario
-                    estado.setText("Modifying");
-                } else {
-                    isNewUser = true; // Es un nuevo usuario
-                    estado.setText("Creating");
-                }
+    if (!loginText.isEmpty() && !password.isEmpty()) {
+        try {
+            // Verificar si el usuario ya existe en el archivo
+            if (isUserExists(loginText)) {
+                isNewUser = false; // No es un nuevo usuario
+                estado.setText("Modifying");
+            } else {
+                isNewUser = true; // Es un nuevo usuario
+                estado.setText("Creating");
+            }
 
-                // Guardar el login y contraseña en el archivo
+            // Solo guardar el login y contraseña en el archivo si es un nuevo usuario
+            if (isNewUser) {
                 FileWriter writer = new FileWriter(FILE_NAME, true);
                 writer.write("Login: " + loginText + ", Password: " + password + System.lineSeparator());
                 writer.close();
-
-                JOptionPane.showMessageDialog(this, "Login data saved successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
-            } catch (IOException e) {
-                e.printStackTrace();
-                JOptionPane.showMessageDialog(this, "Error saving login data!", "Error", JOptionPane.ERROR_MESSAGE);
             }
-        } else {
-            JOptionPane.showMessageDialog(this, "Login and Password fields are required!", "Error", JOptionPane.ERROR_MESSAGE);
+
+            JOptionPane.showMessageDialog(this, "Login data saved successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        } catch (IOException e) {
+            e.printStackTrace();
+            JOptionPane.showMessageDialog(this, "Error saving login data!", "Error", JOptionPane.ERROR_MESSAGE);
         }
+    } else {
+        JOptionPane.showMessageDialog(this, "Login and Password fields are required!", "Error", JOptionPane.ERROR_MESSAGE);
+    }
     }
 
     private boolean isUserExists(String login) throws IOException {

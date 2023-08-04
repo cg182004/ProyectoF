@@ -1,18 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package i.login;
 
-/**
- *
- * @author cleve
- */
+import Mantenimientos.mantimientodeUsuario;
+
 public class MenuPrincipal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MenuPrincipal
-     */
+ 
     public MenuPrincipal() {
         initComponents();
     }
@@ -91,7 +84,8 @@ public class MenuPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        mantenimientodeUsuario usuario = new mantenimientodeUsuario(); 
+       mantimientodeUsuario usuarioForm = new mantimientodeUsuario(); 
+       usuarioForm.setVisible(true); 
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**

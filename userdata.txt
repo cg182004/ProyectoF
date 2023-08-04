@@ -8,3 +8,5 @@ carlos,gomez,carlosg2004@gmai;.com,1234
 carlos
 cg,gomez,yamkiperez,1234
 cg,gomez,yamkiperez,1234
+carlos,gomez,carlosg2004@gamil.com,1234
+carlos,gomez,carlosg2004@gamil.com,1234
