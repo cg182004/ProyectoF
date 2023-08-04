@@ -5,3 +5,6 @@ Kleiry
 Kleiry,Gomez,Kleiryg2005@gmail.com,203923
 cg,gomez,holaa,1234
 carlos,gomez,carlosg2004@gmai;.com,1234
+carlos
+cg,gomez,yamkiperez,1234
+cg,gomez,yamkiperez,1234

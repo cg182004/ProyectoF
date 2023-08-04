@@ -1,6 +1,7 @@
 
 package i.login;
 
+import Mantenimientos.mantimientodeUsuario;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -223,6 +224,8 @@ public class LoginJframe extends javax.swing.JFrame {
     if (isValidCredentials(username, password)) {
         // Aquí puedes realizar cualquier lógica adicional que desees ejecutar cuando el inicio de sesión sea exitoso
         JOptionPane.showMessageDialog(this, "Login successful!", "Success", JOptionPane.INFORMATION_MESSAGE);
+        MenuPrincipal m = new MenuPrincipal();
+        m.setVisible(true);
     } else {
         JOptionPane.showMessageDialog(this, "Invalid username or password! create account", "Error", JOptionPane.ERROR_MESSAGE);
     }
@@ -261,7 +264,7 @@ public class LoginJframe extends javax.swing.JFrame {
     }//GEN-LAST:event_iniciarActionPerformed
 
     private void crearcuentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_crearcuentaActionPerformed
-      singup SingupFrame= new singup(); 
+      mantimientodeUsuario SingupFrame= new mantimientodeUsuario(); 
       SingupFrame.  setVisible(true);
       SingupFrame.pack();
       SingupFrame.setLocationRelativeTo(null);
