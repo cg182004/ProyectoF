@@ -8,4 +8,12 @@ Davidson,King,DalvinsonReyes.p@gmail.com,123456789
 =======
 cg,gomez,holaa,1234
 carlos,gomez,carlosg2004@gmai;.com,1234
+<<<<<<< HEAD
 >>>>>>> d9b140592fa9c2e84f1bad18eb33c9b9843d6120
+=======
+carlos
+cg,gomez,yamkiperez,1234
+cg,gomez,yamkiperez,1234
+carlos,gomez,carlosg2004@gamil.com,1234
+carlos,gomez,carlosg2004@gamil.com,1234
+>>>>>>> 40a59f60262c6e782c76831f8a7990a35d0cb2df
