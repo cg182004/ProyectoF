@@ -1,0 +1,2 @@
+Código: 234243, Descripción: primer archivo 
+Código: 23242, Descripción: transaccion diaria
