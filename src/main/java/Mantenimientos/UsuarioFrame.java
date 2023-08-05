@@ -1,4 +1,4 @@
-
+//GEN-LINE:variables
 package Mantenimientos;
 
 import java.io.BufferedReader;
@@ -35,7 +35,7 @@ public class UsuarioFrame extends javax.swing.JFrame {
 }
   
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
@@ -183,7 +183,7 @@ public class UsuarioFrame extends javax.swing.JFrame {
         b2.setText("Administrator");
         b2.setToolTipText("");
 
-<<<<<<<< HEAD:src/main/java/Mantenimientos/UsuarioFrame.java
+
         estado.setBackground(new java.awt.Color(24, 113, 203));
         estado.setForeground(new java.awt.Color(255, 255, 255));
         estado.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -260,70 +260,7 @@ public class UsuarioFrame extends javax.swing.JFrame {
                 .addGroup(DerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(PassLabel)
                     .addComponent(contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-========
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(guardar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(limpiar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(Salir)
-                .addGap(28, 28, 28))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(email))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(97, 97, 97)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGap(22, 22, 22)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4))
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(120, 120, 120)
-                .addComponent(jLabel3)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel2)
-                .addGap(102, 102, 102))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(55, 55, 55)
-                        .addComponent(b1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(b2))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(76, 76, 76)
-                        .addComponent(Apellido, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(11, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(8, 8, 8)
-                .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(login, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
->>>>>>>> 03c8af1820a7a39dfe0be4fcb8fc0b95d8e7094d:src/main/java/i/login/mantimientodeUsuario.java
+
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(DerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LevelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -392,7 +329,7 @@ public class UsuarioFrame extends javax.swing.JFrame {
 
         estado.setBackground(new java.awt.Color(153, 0, 153));
         estado.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(estado);
+     
         estado.setBounds(150, 20, 70, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -407,9 +344,9 @@ public class UsuarioFrame extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void ApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ApellidoActionPerformed
+    private void ApellidoActionPerformed(java.awt.event.ActionEvent evt) {                                         
          String lastname = Apellido.getText();
          
     if (!lastname.isEmpty()) {
@@ -428,9 +365,9 @@ public class UsuarioFrame extends javax.swing.JFrame {
     }
          
          
-    }//GEN-LAST:event_ApellidoActionPerformed
+    }                                        
 
-    private void nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreActionPerformed
+    private void nombreActionPerformed(java.awt.event.ActionEvent evt) {                                       
        
      String name = nombre.getText();
 
@@ -447,13 +384,13 @@ public class UsuarioFrame extends javax.swing.JFrame {
     } else {
         JOptionPane.showMessageDialog(this, "Name field is empty!", "Error", JOptionPane.ERROR_MESSAGE);
     }
-    }//GEN-LAST:event_nombreActionPerformed
+    }                                      
 
-    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {                                      
          System.exit(0);
-    }//GEN-LAST:event_SalirActionPerformed
+    }                                     
 
-    private void guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_guardarActionPerformed
+    private void guardarActionPerformed(java.awt.event.ActionEvent evt) {                                        
      String name = nombre.getText();
     String lastName = Apellido.getText();
     String email = this.email.getText();
@@ -472,9 +409,9 @@ public class UsuarioFrame extends javax.swing.JFrame {
     } else {
         JOptionPane.showMessageDialog(this, "All fields are required!", "Error", JOptionPane.ERROR_MESSAGE);
     }
-    }//GEN-LAST:event_guardarActionPerformed
+    }                                       
 
-    private void contraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contraseñaActionPerformed
+    private void contraseñaActionPerformed(java.awt.event.ActionEvent evt) {                                           
        String userPassword = new String(contraseña.getPassword());
 
     // Verificar si la contraseña no está vacía
@@ -492,9 +429,9 @@ public class UsuarioFrame extends javax.swing.JFrame {
     } else {
         JOptionPane.showMessageDialog(this, "Password field is empty!", "Error", JOptionPane.ERROR_MESSAGE);
     }     
-    }//GEN-LAST:event_contraseñaActionPerformed
+    }                                          
 
-    private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
+    private void emailActionPerformed(java.awt.event.ActionEvent evt) {                                      
         String Email = email.getText();
          
     if (!Email.isEmpty()) {
@@ -511,9 +448,9 @@ public class UsuarioFrame extends javax.swing.JFrame {
     } else {
         JOptionPane.showMessageDialog(this, "Name field is empty!", "Error", JOptionPane.ERROR_MESSAGE);
     } 
-    }//GEN-LAST:event_emailActionPerformed
+    }                                     
 
-    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {                                      
 String loginText = login.getText();
     String password = new String(contraseña.getPassword());
 
@@ -561,13 +498,13 @@ String loginText = login.getText();
         }
         reader.close();
         return false; 
-    }//GEN-LAST:event_loginActionPerformed
+    }                                     
 
-    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ActionPerformed
+    private void b1ActionPerformed(java.awt.event.ActionEvent evt) {                                   
         // TODO add your handling code here:
-    }//GEN-LAST:event_b1ActionPerformed
+    }                                  
 
-    private void limpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_limpiarActionPerformed
+    private void limpiarActionPerformed(java.awt.event.ActionEvent evt) {                                        
     login.setText("");
     contraseña.setText("");
     nombre.setText("");
@@ -579,18 +516,18 @@ String loginText = login.getText();
     b.clearSelection();
      isNewUser = true; // Set isNewUser to true when clean action is performed
     estado.setText("Creating");
-    }//GEN-LAST:event_limpiarActionPerformed
+    }                                       
 
-    private void CabeceraMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CabeceraMousePressed
+    private void CabeceraMousePressed(java.awt.event.MouseEvent evt) {                                      
         xmouse=evt.getX();
         ymouse=evt.getY();
-    }//GEN-LAST:event_CabeceraMousePressed
+    }                                     
 
-    private void CabeceraMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CabeceraMouseDragged
+    private void CabeceraMouseDragged(java.awt.event.MouseEvent evt) {                                      
         int x=evt.getXOnScreen();
         int y=evt.getYOnScreen();
         this.setLocation(x-xmouse, y-ymouse);
-    }//GEN-LAST:event_CabeceraMouseDragged
+    }                                     
 
     
     public static void main(String args[]) {
@@ -604,7 +541,7 @@ String loginText = login.getText();
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JTextField Apellido;
     private javax.swing.JPanel Cabecera;
     private javax.swing.JPanel DerPanel;
@@ -628,5 +565,5 @@ String loginText = login.getText();
     private javax.swing.JButton limpiar;
     private javax.swing.JTextField login;
     private javax.swing.JTextField nombre;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }

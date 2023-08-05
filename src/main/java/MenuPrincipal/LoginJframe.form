@@ -71,10 +71,10 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="iniciar" min="-2" pref="92" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="iniciar" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="ExitButton" min="-2" max="-2" attributes="0"/>
+                              <Component id="ExitButton" min="-2" pref="76" max="-2" attributes="0"/>
                           </Group>
                           <Component id="Password" min="-2" pref="291" max="-2" attributes="0"/>
                           <Component id="UserName" min="-2" pref="92" max="-2" attributes="0"/>

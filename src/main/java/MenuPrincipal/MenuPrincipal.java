@@ -3,6 +3,7 @@ package MenuPrincipal;
 
 import Mantenimientos.Catalogoframe;
 import Mantenimientos.UsuarioFrame;
+import Mantenimientos.Documentoframe;
 
 public class MenuPrincipal extends javax.swing.JFrame {
 
@@ -42,10 +43,10 @@ public class MenuPrincipal extends javax.swing.JFrame {
         bg.setBackground(new java.awt.Color(204, 204, 204));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        MenuPanel.setBackground(new java.awt.Color(255, 255, 255));
+        MenuPanel.setBackground(new java.awt.Color(24, 113, 203));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(24, 113, 203));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("BIENVENIDO");
 
@@ -68,7 +69,7 @@ public class MenuPrincipal extends javax.swing.JFrame {
 
         bg.add(MenuPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, 370));
 
-        MantenimientoMenu3.setText("manetnimientos");
+        MantenimientoMenu3.setText("Mantenimiento");
 
         UsuariosMenuItem2.setText("Usuarios");
         UsuariosMenuItem2.addActionListener(new java.awt.event.ActionListener() {
@@ -87,17 +88,22 @@ public class MenuPrincipal extends javax.swing.JFrame {
         MantenimientoMenu3.add(CatalogoMenuItem3);
 
         DocumentosMenuItem4.setText("Documentos");
+        DocumentosMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DocumentosMenuItem4ActionPerformed(evt);
+            }
+        });
         MantenimientoMenu3.add(DocumentosMenuItem4);
 
         jMenuBar1.add(MantenimientoMenu3);
 
-        ConsultasMenu1.setText("consultas");
+        ConsultasMenu1.setText("Consultas");
         jMenuBar1.add(ConsultasMenu1);
 
-        ProcesosMenu2.setText("procesos");
+        ProcesosMenu2.setText("Procesos");
         jMenuBar1.add(ProcesosMenu2);
 
-        MovimientoMenu5.setText("movimientos");
+        MovimientoMenu5.setText("Movimientos");
         jMenuBar1.add(MovimientoMenu5);
 
         setJMenuBar(jMenuBar1);
@@ -127,6 +133,11 @@ public class MenuPrincipal extends javax.swing.JFrame {
         Catalogoframe CatalogoForm = new Catalogoframe();
         CatalogoForm.setVisible(true);
     }//GEN-LAST:event_CatalogoMenuItem3ActionPerformed
+
+    private void DocumentosMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DocumentosMenuItem4ActionPerformed
+        Documentoframe documentForm =new Documentoframe(); 
+        documentForm.setVisible(true);
+    }//GEN-LAST:event_DocumentosMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
